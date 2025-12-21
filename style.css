@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: Nunito, sans-serif;
+  background: linear-gradient(0deg, #FFDEE9, #c6f1ef);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(255,255,255,0.95);
+  padding: 40px;
+  border-radius: 25px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-family: 'Fredoka One';
+  color: #ff6b6b;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.photo-card {
+  width: 130px;
+  height: 130px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.acrostic-box {
+  background: #fff5f7;
+  border: 3px dashed #ffb7b2;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.line {
+  margin: 8px 0;
+}
+
+.highlight {
+  color: #ff4757;
+  font-weight: bold;
+}
+
+.joke {
+  margin-top: 20px;
+  font-style: italic;
+  color: #777;
+}
+
+button {
+  margin-top: 20px;
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* POPUPS */
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.7);
+}
+
+.overlay.active {
+  display: flex;
+}
+
+.popup {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #ff6b6b;
+  color: white;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.media-box {
+  width: 100%;
+  height: 220px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.media-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#error {
+  color: #ff4757;
+  font-size: 0.9rem;
+}

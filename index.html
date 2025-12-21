@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For You</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>SLEEPYHEAD!!! </h1>
+
+  <!-- DAILY SUB HEADER -->
+  <p id="dailyQuote" class="subtitle"></p>
+
+  <!-- RANDOM IMAGES / GIFS -->
+  <div class="gallery">
+    <div class="photo-card">
+      <img id="img1" />
+    </div>
+    <div class="photo-card">
+      <img id="img2" />
+    </div>
+  </div>
+
+  <!-- ACROSTIC -->
+  <div class="acrostic-box">
+    <div class="line"><span class="highlight">P</span>ure</div>
+    <div class="line"><span class="highlight">O</span>riginal</div>
+    <div class="line"><span class="highlight">O</span>ne-of-a-kind</div>
+    <div class="line"><span class="highlight">N</span>ever afraid</div>
+    <div class="line"><span class="highlight">A</span>mazing</div>
+    <div class="line"><span class="highlight">M</span>emorable</div>
+  </div>
+
+  <!-- JOKE / PASSWORD HINT -->
+  <p id="dailyJoke" class="joke"></p>
+
+  <button onclick="openPassword()">Unlock 🤍</button>
+
+</div>
+
+<!-- PASSWORD -->
+<div id="passwordOverlay" class="overlay">
+  <div class="popup">
+    <span class="close" onclick="closePassword()">×</span>
+    <input id="passwordInput" placeholder="Answer here…" />
+    <p id="error"></p>
+    <button onclick="checkPassword()">Enter</button>
+  </div>
+</div>
+
+<!-- SURPRISE -->
+<div id="surpriseOverlay" class="overlay">
+  <div class="popup">
+    <span class="close" onclick="closeSurprise()">×</span>
+
+    <div class="media-box">
+      <img id="surpriseImg" />
+    </div>
+
+    <h2 id="tagline"></h2>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
